@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя сторінка</title>
+  <meta charset="UTF-8">
+  <title>Менеджер бібліотеки</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1>📚 Менеджер бібліотеки</h1>
 
-    <h1>Привіт! Це моя перша веб-сторінка.</h1>
+  <!-- Форма додавання книги -->
+  <h2>Додати нову книгу</h2>
+  <form id="addBookForm">
+    <input type="text" id="title" placeholder="Назва" required>
+    <input type="text" id="author" placeholder="Автор" required>
+    <input type="number" id="year" placeholder="Рік" required>
+    <input type="text" id="genre" placeholder="Жанр" required>
+    <button type="submit">Додати</button>
+  </form>
 
-    <script src="script.js"></script>
+  <!-- Список книг -->
+  <div id="library-container"></div>
+  
+  <script src="script.js"></script>
 </body>
 </html>
